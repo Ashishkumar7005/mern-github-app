@@ -10,6 +10,7 @@ const Logout = () => {
 			const data = await res.json();
 			console.log(data);
 			setAuthUser(null);
+			toast.success("Logged Out Successfully");
 		 } catch (error) {
 			toast.error(error.message);
 		 }
