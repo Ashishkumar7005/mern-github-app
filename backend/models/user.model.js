@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     avatarUrl:{
          type:String,
     },
-    likedProfile:{
+    likedProfiles:{
         type:[String],
         default:[]
     },
