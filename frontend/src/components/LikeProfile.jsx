@@ -5,7 +5,7 @@ import { useAuthContext } from "../context/AuthContext";
 const LikeProfile = ({ userProfile }) => {
 	const { authUser } = useAuthContext();
 
-	const isOwnProfile = authUser && authUser.username === userProfile.login;
+	const isOwnProfile = authUser && authUser.username === userProfile.login; 
 
 	const handleLikeProfile = async () => {
 		try {
